@@ -14,7 +14,6 @@ public class Equipment implements Interface{
     private Coach coach;
     private ArrayList<Player> listPlayers = new ArrayList<>();
     
-    
     public Equipment(String name, String city, Coach coach) {
         this.name = name;
         this.city = city;
