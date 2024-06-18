@@ -10,6 +10,7 @@ import com.mycompany.football.equipment.sportsman.Player;
 public class FOOTBALL {
 
     public static void main(String[] args) {
+        League league = new League("La Liga", "España");
         Coach coach = new Coach("Anchelotti", 56);
         Equipment equipoOne = new Equipment("Real Madrid", "Madrid", coach);
         Coach coachTwo = new Coach("Paulo Fonseca", 49);
@@ -25,5 +26,8 @@ public class FOOTBALL {
         equipoOne.lookPlayers();
         equipoOne.punctuation(3);
         equipoTwo.punctuation(1);
+        league.addEquipments(equipoOne);
+        league.addEquipments(equipoTwo);
+        league.positionsTable();
     }
 }

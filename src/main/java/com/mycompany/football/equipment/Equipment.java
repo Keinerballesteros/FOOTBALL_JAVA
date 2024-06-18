@@ -19,6 +19,28 @@ public class Equipment implements Interface{
         this.city = city;
         this.coach = coach;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public Coach getCoach() {
+        return coach;
+    }
+
+    public ArrayList<Player> getListPlayers() {
+        return listPlayers;
+    }
+    
+    
     
     public void punctuation(int score){
         this.score += score;
